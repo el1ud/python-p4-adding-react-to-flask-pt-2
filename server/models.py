@@ -1,7 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy_serializer import SerializerMixin
 
-db = SQLAlchemy()
+db = SQLAlchemy() 
 
 class Movie(db.Model, SerializerMixin):
     __tablename__ = 'movies'
